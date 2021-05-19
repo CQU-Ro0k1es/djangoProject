@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+"""""
+接收到消url路径之后，截取前面，剩余的部分的通过include传到polls文件夹中的urls.py
+"""""
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
